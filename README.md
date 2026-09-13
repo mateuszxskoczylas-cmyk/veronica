@@ -1,21 +1,17 @@
-# CODE: VERONICA // ROCKFORT TERMINAL
+# SHINHATI // Steam Library
 
-Fanowska minigra przeglądarkowa osadzona podczas wydarzeń na Rockfort Island w grudniu 1998 roku.
+Pełnoekranowa biblioteka Steam inspirowana Steam Big Picture. Nie ma pulpitu ani ramki udającej osobne okno programu — cała strona jest biblioteką gier.
 
-## Założenie
+## Statusy gier
 
-Gracz obsługuje awaryjny terminal sieciowy Umbrelli po ataku na wyspę. Zaczyna od odzyskania węzła bezpieczeństwa, bada zablokowaną transmisję, przywraca łączność zewnętrzną i stopniowo trafia na prywatne archiwum Ashfordów.
+Statusy są zapisane wyłącznie w `games.js`:
 
-## Sterowanie
+- `status: "todo"` — do zrobienia
+- `status: "done"` — ukończona
+- `favorite: true` — ulubiona
 
-- pojedyncze kliknięcie ikony — zaznaczenie,
-- ponowne kliknięcie / podwójne kliknięcie — otwarcie,
-- okna można przeciągać za pasek tytułowy,
-- postęp zapisuje się lokalnie w przeglądarce,
-- `Start -> Nowa sesja` resetuje grę.
+Strona nie zapisuje statusów w `localStorage`, cookies ani cache przeglądarki. Gry z `playtime: "-"` są automatycznie pokazywane jako **NADCHODZĄCE**.
 
-## Publikacja
+## Okładki
 
-Strona jest statyczna i działa bez backendu. W GitHub Pages wystarczy ustawić publikację z gałęzi `main` i katalogu `/ (root)`.
-
-Projekt jest fanowskim hołdem i nie jest oficjalnym produktem CAPCOM.
+Strona próbuje pobierać pionowe grafiki `library_600x900.jpg` / `library_capsule.jpg` bezpośrednio z publicznych zasobów Steam na podstawie AppID.
