@@ -224,3 +224,246 @@ window.STEAM_COVERS[393080] = "https://cdn2.steamgriddb.com/grid/a3116fcb0ff7858
 
   requestAnimationFrame(() => inputs[0].focus());
 })();
+
+// Pelnoekranowy podglad okładki zamiast generycznej karty z informacjami i przyciskami.
+(() => {
+  const style = document.createElement("style");
+  style.textContent = `
+    #focusView {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      display: none;
+      overflow: hidden;
+      background: #080d12;
+    }
+    #focusView.open { display: block; }
+    .focus-bg {
+      position: absolute;
+      inset: -56px;
+      background-image: var(--focus-bg, none);
+      background-position: center;
+      background-size: cover;
+      filter: blur(44px) saturate(1.28) brightness(.42);
+      transform: scale(1.11);
+      opacity: .92;
+      pointer-events: none;
+    }
+    .focus-shade {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(22,34,46,.08), rgba(5,9,13,.62) 62%, rgba(3,6,9,.88) 100%),
+        linear-gradient(180deg, rgba(4,7,10,.18), rgba(4,7,10,.62));
+      pointer-events: none;
+    }
+    .focus-stage {
+      position: relative;
+      z-index: 2;
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6vh 10vw 8vh;
+    }
+    .focus-poster {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      max-width: min(78vw, 540px);
+    }
+    #focusCover {
+      display: block;
+      height: min(74vh, 780px);
+      width: auto;
+      max-width: min(76vw, 540px);
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: 1px;
+      box-shadow: 0 34px 92px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.08);
+    }
+    #focusTitle {
+      max-width: min(76vw, 760px);
+      text-align: center;
+      color: #f2f7fb;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: .01em;
+      text-shadow: 0 2px 18px rgba(0,0,0,.72);
+    }
+    .focus-close {
+      position: absolute;
+      right: 26px;
+      top: 22px;
+      z-index: 5;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(9,15,21,.48);
+      color: #eaf2f9;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 1;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      transition: background .2s ease, transform .2s ease;
+    }
+    .focus-close:hover {
+      background: rgba(53,75,96,.7);
+      transform: scale(1.05);
+    }
+    .focus-nav {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      transform: translateY(-50%);
+      width: 58px;
+      height: 82px;
+      border: 0;
+      background: transparent;
+      color: rgba(235,244,251,.72);
+      font-size: 58px;
+      font-weight: 200;
+      line-height: 1;
+      cursor: pointer;
+      text-shadow: 0 3px 20px rgba(0,0,0,.82);
+      transition: color .2s ease, transform .2s ease;
+    }
+    .focus-nav:hover {
+      color: #fff;
+      transform: translateY(-50%) scale(1.08);
+    }
+    .focus-prev { left: 24px; }
+    .focus-next { right: 24px; }
+    @media (max-width: 680px) {
+      #focusCover { height: min(68vh, 620px); max-width: 72vw; }
+      #focusTitle { font-size: 17px; }
+      .focus-nav { width: 42px; font-size: 44px; }
+      .focus-prev { left: 4px; }
+      .focus-next { right: 4px; }
+      .focus-close { right: 12px; top: 12px; }
+    }
+  `;
+  document.head.appendChild(style);
+
+  const view = document.createElement("div");
+  view.id = "focusView";
+  view.setAttribute("role", "dialog");
+  view.setAttribute("aria-modal", "true");
+  view.innerHTML = `
+    <div class="focus-bg" aria-hidden="true"></div>
+    <div class="focus-shade" aria-hidden="true"></div>
+    <button class="focus-close" type="button" aria-label="Zamknij">×</button>
+    <button class="focus-nav focus-prev" type="button" aria-label="Poprzednia gra">‹</button>
+    <div class="focus-stage">
+      <div class="focus-poster">
+        <img id="focusCover" alt="">
+        <div id="focusTitle"></div>
+      </div>
+    </div>
+    <button class="focus-nav focus-next" type="button" aria-label="Nastepna gra">›</button>
+  `;
+  document.body.appendChild(view);
+
+  const cover = view.querySelector("#focusCover");
+  const title = view.querySelector("#focusTitle");
+  const stage = view.querySelector(".focus-stage");
+  const closeButton = view.querySelector(".focus-close");
+  const prevButton = view.querySelector(".focus-prev");
+  const nextButton = view.querySelector(".focus-next");
+  let currentId = null;
+
+  function gameById(id) {
+    return (window.STEAM_GAMES || []).find(game => Number(game.appid) === Number(id));
+  }
+
+  function coverFor(game) {
+    return window.STEAM_COVERS?.[game.appid] || game.thumb || "";
+  }
+
+  function visibleIds() {
+    return [...document.querySelectorAll("#grid .game")]
+      .map(card => Number(card.dataset.id || card.dataset.appid))
+      .filter(Number.isFinite);
+  }
+
+  function openFocus(id) {
+    const game = gameById(id);
+    if (!game) return;
+    currentId = Number(id);
+    const src = coverFor(game);
+    cover.src = src;
+    cover.alt = game.name;
+    title.textContent = game.name;
+    view.style.setProperty("--focus-bg", `url("${String(src).replace(/"/g, "%22")}")`);
+    view.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeFocus() {
+    view.classList.remove("open");
+    document.body.style.overflow = "";
+    currentId = null;
+  }
+
+  function step(direction) {
+    const ids = visibleIds();
+    if (!ids.length) return;
+    let index = ids.indexOf(currentId);
+    if (index < 0) index = 0;
+    index = (index + direction + ids.length) % ids.length;
+    openFocus(ids[index]);
+  }
+
+  // Przechwytujemy klik zanim stara karta szczegolow zdazy sie otworzyc.
+  document.addEventListener("click", event => {
+    const card = event.target.closest?.("#grid .game");
+    if (!card) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    openFocus(Number(card.dataset.id || card.dataset.appid));
+  }, true);
+
+  document.addEventListener("keydown", event => {
+    if (view.classList.contains("open")) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        closeFocus();
+      } else if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        step(-1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        step(1);
+      }
+      return;
+    }
+
+    const card = event.target.closest?.("#grid .game");
+    if (card && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      openFocus(Number(card.dataset.id || card.dataset.appid));
+    }
+  }, true);
+
+  closeButton.addEventListener("click", closeFocus);
+  prevButton.addEventListener("click", event => {
+    event.stopPropagation();
+    step(-1);
+  });
+  nextButton.addEventListener("click", event => {
+    event.stopPropagation();
+    step(1);
+  });
+  view.addEventListener("click", event => {
+    if (event.target === view || event.target === stage) closeFocus();
+  });
+})();
