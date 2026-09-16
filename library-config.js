@@ -36,3 +36,23 @@ window.STEAM_RELEASE_DATES = {
   "3558670": "2027-02-12T18:00:00Z",
   "4354570": "2027-04-08T14:00:00Z"
 };
+
+// Gestosc kafelkow: na desktopie ok. 2x wiecej gier w jednym rzedzie.
+(() => {
+  const style = document.createElement("style");
+  style.textContent = `
+    @media (min-width: 1051px) {
+      .grid {
+        grid-template-columns: repeat(auto-fill, minmax(67px, 1fr));
+        gap: 18px 9px;
+      }
+    }
+    @media (min-width: 681px) and (max-width: 1050px) {
+      .grid {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 16px 6px;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
