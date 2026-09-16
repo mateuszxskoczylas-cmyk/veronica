@@ -37,6 +37,10 @@ window.STEAM_RELEASE_DATES = {
   "4354570": "2027-04-08T14:00:00Z"
 };
 
+// Indywidualne podmiany coverow.
+window.STEAM_COVERS = window.STEAM_COVERS || {};
+window.STEAM_COVERS[393080] = "https://cdn2.steamgriddb.com/grid/a3116fcb0ff78581d441a3de68287e73.png";
+
 // Gestosc kafelkow: na desktopie ok. 2x wiecej gier w jednym rzedzie.
 (() => {
   const style = document.createElement("style");
