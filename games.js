@@ -983,5 +983,14 @@ window.STEAM_GAMES = [
     "status": "todo",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1636440/f0dfc016ffde1f3001a60e106bc0c2063fefd695/capsule_231x87.jpg"
+  },
+  {
+    "appid": 3669870,
+    "name": "CONTROL Resonant",
+    "playtime": "-",
+    "rating": "81.93%",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669870/867a73afa5f21c28aaa14e9b0a4d895c540d4a0c/capsule_231x87.jpg"
   }
 ];
