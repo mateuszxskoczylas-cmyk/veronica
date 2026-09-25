@@ -992,5 +992,14 @@ window.STEAM_GAMES = [
     "status": "todo",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669870/867a73afa5f21c28aaa14e9b0a4d895c540d4a0c/capsule_231x87.jpg"
+  },
+  {
+    "appid": 870780,
+    "name": "Control Ultimate Edition",
+    "playtime": "-",
+    "rating": "84.77%",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/870780/capsule_231x87.jpg"
   }
 ];
