@@ -998,7 +998,7 @@ window.STEAM_GAMES = [
     "name": "Control Ultimate Edition",
     "playtime": "-",
     "rating": "84.77%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/870780/capsule_231x87.jpg"
   },
