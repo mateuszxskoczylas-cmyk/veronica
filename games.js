@@ -1001,5 +1001,23 @@ window.STEAM_GAMES = [
     "status": "todo",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/870780/capsule_231x87.jpg"
+  },
+  {
+    "appid": 601150,
+    "name": "Devil May Cry 5",
+    "playtime": "-",
+    "rating": "94.79%",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/601150/capsule_231x87.jpg"
+  },
+  {
+    "appid": 19680,
+    "name": "Alice: Madness Returns",
+    "playtime": "-",
+    "rating": "88.96%",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/19680/capsule_231x87.jpg"
   }
 ];
