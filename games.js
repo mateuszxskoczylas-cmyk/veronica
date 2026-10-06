@@ -1010,5 +1010,23 @@ window.STEAM_GAMES = [
     "status": "todo",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/601150/capsule_231x87.jpg"
+  },
+  {
+    "appid": 2842040,
+    "name": "Star Wars Outlaws",
+    "playtime": "-",
+    "rating": "70.33%",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2842040/capsule_231x87.jpg"
+  },
+  {
+    "appid": 814380,
+    "name": "Sekiro™: Shadows Die Twice",
+    "playtime": "-",
+    "rating": "94.29%",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/capsule_231x87.jpg"
   }
 ];
