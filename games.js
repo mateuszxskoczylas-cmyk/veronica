@@ -1028,5 +1028,14 @@ window.STEAM_GAMES = [
     "status": "todo",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/capsule_231x87.jpg"
+  },
+  {
+    "appid": 1551980,
+    "name": "Clive Barker's Hellraiser: Revival",
+    "playtime": "-",
+    "rating": "-",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551980/capsule_231x87.jpg"
   }
 ];
