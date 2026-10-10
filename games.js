@@ -1007,7 +1007,7 @@ window.STEAM_GAMES = [
     "name": "Devil May Cry 5",
     "playtime": "-",
     "rating": "94.79%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/601150/capsule_231x87.jpg"
   },
