@@ -1034,7 +1034,7 @@ window.STEAM_GAMES = [
     "name": "Clive Barker's Hellraiser: Revival",
     "playtime": "-",
     "rating": "-",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551980/capsule_231x87.jpg"
   }
