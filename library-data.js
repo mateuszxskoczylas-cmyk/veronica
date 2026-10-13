@@ -113,7 +113,7 @@ window.STEAM_COVERS = {
   "870780": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/870780/library_600x900.jpg",
   "601150": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/601150/library_600x900.jpg",
   "1551980": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551980/library_600x900.jpg",
-  "2288340": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288340/library_600x900.jpg"
+  "2288340": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288340/a1fb5685d2c140309d5549af1ddc725a7114d889/library_capsule.jpg"
 };
 
 // Tymczasowo wszystkie gry oznaczone jako ukonczone.
