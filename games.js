@@ -1019,5 +1019,14 @@ window.STEAM_GAMES = [
     "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551980/capsule_231x87.jpg"
+  },
+  {
+    "appid": 2288340,
+    "name": "ACE COMBAT 8: WINGS OF THEVE",
+    "playtime": "-",
+    "rating": "-",
+    "status": "todo",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288340/capsule_231x87.jpg"
   }
 ];
