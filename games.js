@@ -1028,5 +1028,14 @@ window.STEAM_GAMES = [
     "status": "todo",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288340/a1fb5685d2c140309d5549af1ddc725a7114d889/library_capsule.jpg"
+  },
+  {
+    "appid": 1422450,
+    "name": "Deadlock",
+    "playtime": "-",
+    "rating": "-",
+    "status": "done",
+    "favorite": false,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1422450/88b400eca727f0547232b49b3e62827f07900c77/capsule_231x87.jpg"
   }
 ];
