@@ -175,13 +175,13 @@ window.STEAM_GAMES = [
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3280350/6e07f61e2585bae97d2406d45666a7ee70543792/capsule_231x87.jpg"
   },
   {
-    "appid": 1938090,
-    "name": "Call of Duty®",
-    "playtime": "68.8h",
-    "rating": "58.39%",
+    "appid": 4435490,
+    "name": "Call of Duty: Modern Warfare IV",
+    "playtime": "-",
+    "rating": "-",
     "status": "todo",
     "favorite": false,
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1938090/0ac3cc02398b9db61c8db4fef2e3e1b4b8b66e4b/capsule_231x87.jpg"
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/c71bc2cb60e440d1a0d2435d0c06c4d4a4050edf/library_capsule.jpg"
   },
   {
     "appid": 920210,
