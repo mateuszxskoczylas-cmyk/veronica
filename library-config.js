@@ -18,7 +18,7 @@ window.STEAM_STATUSES = Object.assign(window.STEAM_STATUSES || {}, {
   "920210": "todo",
   "1817070": "done",
   "1817190": "todo",
-  "2651280": "todo",
+  "2651280": "done",
   "1174180": "todo",
   "2638890": "todo",
   "1196590": "todo",
