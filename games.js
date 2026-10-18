@@ -503,7 +503,7 @@ window.STEAM_GAMES = [
     "name": "Marvel's Spider-Man 2",
     "playtime": "26.5h",
     "rating": "82.16%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/379bd114fe5c23850555d1eb67fa8ac996bf702b/capsule_231x87.jpg"
   },
