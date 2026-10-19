@@ -179,7 +179,7 @@ window.STEAM_GAMES = [
     "name": "Call of Duty: Modern Warfare IV",
     "playtime": "-",
     "rating": "-",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/c71bc2cb60e440d1a0d2435d0c06c4d4a4050edf/library_capsule.jpg"
   },
