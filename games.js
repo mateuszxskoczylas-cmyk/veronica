@@ -224,7 +224,7 @@ window.STEAM_GAMES = [
     "name": "Hogwarts Legacy",
     "playtime": "53.8h",
     "rating": "88.92%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/1b2e4eeed79dd06971492825a461bc5130bf7c28/capsule_231x87.jpg"
   },
