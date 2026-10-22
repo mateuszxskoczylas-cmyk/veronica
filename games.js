@@ -989,7 +989,7 @@ window.STEAM_GAMES = [
     "name": "CONTROL Resonant",
     "playtime": "-",
     "rating": "81.93%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669870/867a73afa5f21c28aaa14e9b0a4d895c540d4a0c/capsule_231x87.jpg"
   },
