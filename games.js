@@ -152,7 +152,7 @@ window.STEAM_GAMES = [
     "name": "The Last of Us™ Part I",
     "playtime": "76.4h",
     "rating": "83.40%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/capsule_231x87.jpg?t=1788822318"
   },
