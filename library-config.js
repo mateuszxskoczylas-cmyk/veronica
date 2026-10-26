@@ -5,6 +5,7 @@ window.STEAM_HIDDEN_APPIDS = [271590, 739630, 1144200, 377160, 2101960, 2668510,
 // Wszystkie pozostale gry sa ukonczone (zielona nakladka).
 // Gry ponizej sa do ukonczenia i maja czysta okladke bez kolorowej nakladki.
 window.STEAM_STATUSES = Object.assign(window.STEAM_STATUSES || {}, {
+  "4115450": "todo",
   "582160": "todo",
   "2208920": "todo",
   "1086940": "todo",
@@ -32,6 +33,7 @@ window.STEAM_STATUSES = Object.assign(window.STEAM_STATUSES || {}, {
 // Gry przed premiera pozostaja nieukonczone, ale wizualnie maja tylko czysta okladke.
 // Po dacie premiery automatycznie pozostaja w statusie todo.
 window.STEAM_RELEASE_DATES = {
+  "4115450": "2026-10-29T02:00:00Z",
   "1636440": "2026-09-24T04:00:00Z",
   "3558670": "2027-02-12T18:00:00Z",
   "4354570": "2027-04-08T14:00:00Z"
