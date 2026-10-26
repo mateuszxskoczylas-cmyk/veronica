@@ -1,5 +1,6 @@
 // Dokladne angielskie library_capsule z SteamDB Metadata / Assets.
 window.STEAM_COVERS = {
+  "4115450": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4115450/471e77854910665c03eb9a53ad06f2ac12903acd/library_capsule.jpg",
   "271590": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900.jpg",
   "2767030": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2767030/b7ccf53aa5becc25ad1c7b2e62d24462cdfcc4c4/library_capsule.jpg",
   "1174180": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900.jpg",
