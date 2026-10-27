@@ -1025,7 +1025,7 @@ window.STEAM_GAMES = [
     "name": "ACE COMBAT 8: WINGS OF THEVE",
     "playtime": "-",
     "rating": "-",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288340/a1fb5685d2c140309d5549af1ddc725a7114d889/library_capsule.jpg"
   },
