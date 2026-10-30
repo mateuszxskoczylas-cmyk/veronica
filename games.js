@@ -188,7 +188,7 @@ window.STEAM_GAMES = [
     "name": "LEGO® Star Wars™: The Skywalker Saga",
     "playtime": "61.8h",
     "rating": "88.49%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/920210/capsule_231x87.jpg?t=1789229256"
   },
