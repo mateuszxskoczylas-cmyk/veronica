@@ -917,7 +917,7 @@ window.STEAM_GAMES = [
     "name": "Assassin's Creed Valhalla",
     "playtime": "2.8h",
     "rating": "68.70%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2208920/capsule_231x87.jpg?t=1789229314"
   },
