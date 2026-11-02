@@ -6,6 +6,7 @@ window.STEAM_HIDDEN_APPIDS = [271590, 739630, 1144200, 377160, 2101960, 2668510,
 // Gry ponizej sa do ukonczenia i maja czysta okladke bez kolorowej nakladki.
 window.STEAM_STATUSES = Object.assign(window.STEAM_STATUSES || {}, {
   "4115450": "todo",
+  "582160": "done",
   "2208920": "done",
   "1086940": "todo",
   "1091500": "todo",
