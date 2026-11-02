@@ -949,15 +949,6 @@ window.STEAM_GAMES = [
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/377160/capsule_231x87.jpg?t=1787061632"
   },
   {
-    "appid": 582160,
-    "name": "Assassin's Creed Origins",
-    "playtime": "1m",
-    "rating": "84.83%",
-    "status": "todo",
-    "favorite": false,
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582160/capsule_231x87.jpg?t=1788256105"
-  },
-  {
     "appid": 4354570,
     "name": "FINAL FANTASY VII REVELATION",
     "playtime": "-",
