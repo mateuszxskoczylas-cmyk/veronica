@@ -215,7 +215,7 @@ window.STEAM_GAMES = [
     "name": "The Last of Us™ Part II Remastered",
     "playtime": "57.0h",
     "rating": "89.41%",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2531310/29904ca69ae022479d64207cc40ce549d0a68acb/capsule_231x87.jpg"
   },
