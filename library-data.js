@@ -106,6 +106,7 @@ window.STEAM_COVERS = {
   "1259420": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1259420/library_600x900.jpg",
   "4384550": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4384550/e88de53b958760b68c081ec3e2ee1ddea2b5ceb7/library_capsule.jpg",
   "377160": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/377160/library_600x900.jpg",
+  "582160": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582160/library_600x900.jpg",
   "4354570": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354570/4ef64a06f35ba298f12ea3f64421756cd5dff9b6/library_capsule.jpg",
   "3558670": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3558670/9da365c6dd7f21eff671a6c6854a680a6ac63f11/library_capsule.jpg",
   "1636440": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1636440/cdad5ea5a7f19f1394a6393416c83720664ecf81/library_capsule.jpg",
@@ -223,6 +224,7 @@ window.STEAM_STATUSES = {
   "1259420": "done",
   "4384550": "done",
   "377160": "done",
+  "582160": "done",
   "4354570": "done",
   "3558670": "done",
   "1636440": "done"
