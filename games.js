@@ -125,7 +125,7 @@ window.STEAM_GAMES = [
     "name": "ELDEN RING",
     "playtime": "83.5h",
     "rating": "92.40%",
-    "status": "done",
+    "status": "todo",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_231x87.jpg?t=1789160006"
   },
