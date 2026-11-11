@@ -1043,7 +1043,7 @@ window.STEAM_GAMES = [
     "name": "Phantom Blade Zero",
     "playtime": "-",
     "rating": "-",
-    "status": "todo",
+    "status": "done",
     "favorite": false,
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4115450/aef06490c9a4ad912142fe3b766ee08a2b38ef80/capsule_231x87.jpg"
   }
