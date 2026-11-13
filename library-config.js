@@ -285,6 +285,14 @@ window.STEAM_COVERS[393080] = "https://cdn2.steamgriddb.com/grid/a3116fcb0ff7858
       border-radius: 1px;
       box-shadow: 0 34px 92px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.08);
     }
+    #focusView.playstation-focus #focusCover {
+      width: min(72vh, 76vw, 600px);
+      height: auto;
+      max-width: 76vw;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      border-radius: 8px;
+    }
     #focusTitle {
       max-width: min(76vw, 760px);
       text-align: center;
@@ -380,34 +388,36 @@ window.STEAM_COVERS[393080] = "https://cdn2.steamgriddb.com/grid/a3116fcb0ff7858
   let currentId = null;
 
   function gameById(id) {
+    if (String(id).startsWith("ps:")) return (window.PLAYSTATION_GAMES || []).slice().sort((a,b) => a.name.localeCompare(b.name, "pl", { sensitivity:"base" }))[Number(String(id).slice(3))] || null;
     return (window.STEAM_GAMES || []).find(game => Number(game.appid) === Number(id));
   }
 
   function coverFor(game) {
-    return window.STEAM_COVERS?.[game.appid] || game.thumb || "";
+    return game.cover || window.STEAM_COVERS?.[game.appid] || game.thumb || "";
   }
 
   function visibleIds() {
     return [...document.querySelectorAll("#grid .game")]
-      .map(card => Number(card.dataset.id || card.dataset.appid))
-      .filter(Number.isFinite);
+      .map(card => card.dataset.psIndex !== undefined ? 'ps:' + card.dataset.psIndex : Number(card.dataset.id || card.dataset.appid))
+      .filter(id => typeof id === 'string' || Number.isFinite(id));
   }
 
   function openFocus(id) {
     const game = gameById(id);
     if (!game) return;
-    currentId = Number(id);
+    currentId = String(id).startsWith('ps:') ? String(id) : Number(id);
     const src = coverFor(game);
     cover.src = src;
     cover.alt = game.name;
     title.textContent = game.name;
     view.style.setProperty("--focus-bg", `url("${String(src).replace(/"/g, "%22")}")`);
+    view.classList.toggle("playstation-focus", String(id).startsWith("ps:"));
     view.classList.add("open");
     document.body.style.overflow = "hidden";
   }
 
   function closeFocus() {
-    view.classList.remove("open");
+    view.classList.remove("open", "playstation-focus");
     document.body.style.overflow = "";
     currentId = null;
   }
@@ -427,7 +437,7 @@ window.STEAM_COVERS[393080] = "https://cdn2.steamgriddb.com/grid/a3116fcb0ff7858
     if (!card) return;
     event.preventDefault();
     event.stopImmediatePropagation();
-    openFocus(Number(card.dataset.id || card.dataset.appid));
+    openFocus(card.dataset.psIndex !== undefined ? 'ps:' + card.dataset.psIndex : Number(card.dataset.id || card.dataset.appid));
   }, true);
 
   document.addEventListener("keydown", event => {
@@ -452,7 +462,7 @@ window.STEAM_COVERS[393080] = "https://cdn2.steamgriddb.com/grid/a3116fcb0ff7858
     if (card && (event.key === "Enter" || event.key === " ")) {
       event.preventDefault();
       event.stopImmediatePropagation();
-      openFocus(Number(card.dataset.id || card.dataset.appid));
+      openFocus(card.dataset.psIndex !== undefined ? 'ps:' + card.dataset.psIndex : Number(card.dataset.id || card.dataset.appid));
     }
   }, true);
 
