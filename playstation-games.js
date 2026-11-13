@@ -71,6 +71,10 @@ window.PLAYSTATION_GAMES = [
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png?w=600&thumb=false"
   },
   {
+    "name": "Marvel's Wolverine",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2215/a69481c5fa50fe19f42896d84fb7cbf37ab8646801a93322.png?w=600&thumb=false"
+  },
+  {
     "name": "Mortal Kombat 1",
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1515/1cc63f4f4b2c9a9852fabefba4ca7eea936b1ef7867811a5.png?w=600&thumb=false"
   },
@@ -134,6 +138,6 @@ window.PLAYSTATION_GAMES = [
   },
   {
     "name": "Wiedźmin 3: Dziki Gon",
-    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1711/f1ca1ab2a3e548d28a8d5dc058874d59edbd9d9ff1d65d1d.png?w=600&thumb=false"
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1711/2770dc7f7f267d5da7fe5b2704bf7586d9c2c461dadfd386.png?w=600&thumb=false"
   }
 ];
