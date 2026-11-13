@@ -102,6 +102,11 @@ window.PLAYSTATION_GAMES = [
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0207/oGHhaQR5Y8ydAMUUBBPvylI7.png?w=600&thumb=false"
   },
   {
+    "name": "Resident Evil Requiem",
+    "physical": true,
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png?w=600&thumb=false"
+  },
+  {
     "name": "Resident Evil Village",
     "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202101/0812/FkzwjnJknkrFlozkTdeQBMub.png?w=600&thumb=false"
