@@ -2,6 +2,7 @@
 window.PLAYSTATION_GAMES = [
   {
     "name": "Alan Wake 2",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/c3daf3037feb797d9e71b81618e3b5ff3ff1f9609db5a4a2.png?w=600&thumb=false"
   },
   {
@@ -58,6 +59,7 @@ window.PLAYSTATION_GAMES = [
   },
   {
     "name": "Kingdom Come: Deliverance II",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1208/05a84ce968125d79fa36484c5a756a1c8d9b05622aae21c1.png?w=600&thumb=false"
   },
   {
@@ -82,14 +84,17 @@ window.PLAYSTATION_GAMES = [
   },
   {
     "name": "Resident Evil 2 Remake",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0204/uDFoGvnMTTCLVmTwjj0njGWC.png?w=600&thumb=false"
   },
   {
     "name": "Resident Evil 3 Remake",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0206/WmriZBRlSeXWEEDLJOWW7MdW.png?w=600&thumb=false"
   },
   {
     "name": "Resident Evil 4 Remake",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png?w=600&thumb=false"
   },
   {
@@ -98,10 +103,12 @@ window.PLAYSTATION_GAMES = [
   },
   {
     "name": "Resident Evil Village",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202101/0812/FkzwjnJknkrFlozkTdeQBMub.png?w=600&thumb=false"
   },
   {
     "name": "Silent Hill 2",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2000/IgwsFz9BiBrFvyV7pIWpoVgd.png?w=600&thumb=false"
   },
   {
