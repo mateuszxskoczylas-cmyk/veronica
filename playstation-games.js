@@ -75,10 +75,6 @@ window.PLAYSTATION_GAMES = [
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1515/1cc63f4f4b2c9a9852fabefba4ca7eea936b1ef7867811a5.png?w=600&thumb=false"
   },
   {
-    "name": "Ratchet & Clank (2016)",
-    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202011/1020/2sD70skhUEhaf3gwCWJsEfGt.png?w=600&thumb=false"
-  },
-  {
     "name": "Red Dead Redemption 2",
     "cover": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png?w=600&thumb=false"
   },
