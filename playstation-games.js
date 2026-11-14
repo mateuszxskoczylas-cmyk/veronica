@@ -145,13 +145,45 @@ window.PLAYSTATION_GAMES = [
 /* Planowane zakupy fizyczne PS5. Edytowane w repozytorium, nie w przegladarce. */
 window.PLAYSTATION_WISHLIST = [
   {
-    "name": "Until Dawn 2",
-    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2808/6779640b51ca4b98c8185f677cb10e13792de40fe06614fa.png?w=600&thumb=false",
-    "releaseDate": "2027-01-28"
+    "name": "Clair Obscur: Expedition 33",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2217/e5833a53529ff9879e87689f1e8b04d45ba7e6c97fa791e2.png?w=600&thumb=false"
+  },
+  {
+    "name": "Cyberpunk 2077",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png?w=600&thumb=false"
+  },
+  {
+    "name": "Death Stranding 2: On the Beach",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2711/cbc6c3135660ec68eacc766959a766b36d7ce3fa6010ca88.png?w=600&thumb=false"
   },
   {
     "name": "God of War Laufey",
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1800/e1e187126032636435888915f17e26c3645661746a38362d.png?w=600&thumb=false",
     "releaseDate": "2027-05-20"
+  },
+  {
+    "name": "God of War Ragnarök",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2016/b69c06fb108299866057126b0d3a0530bdf96a39d2ce1cb9.png?w=600&thumb=false"
+  },
+  {
+    "name": "Grand Theft Auto V",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png?w=600&thumb=false"
+  },
+  {
+    "name": "The Last of Us Part I",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png?w=600&thumb=false"
+  },
+  {
+    "name": "The Last of Us Part II Remastered",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png?w=600&thumb=false"
+  },
+  {
+    "name": "UNCHARTED: Kolekcja Dziedzictwo Złodziei",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/FDEoSfzsxSpuAHyeBTjWBRdC.png?w=600&thumb=false"
+  },
+  {
+    "name": "Until Dawn 2",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2808/6779640b51ca4b98c8185f677cb10e13792de40fe06614fa.png?w=600&thumb=false",
+    "releaseDate": "2027-01-28"
   }
 ];
