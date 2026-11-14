@@ -141,3 +141,17 @@ window.PLAYSTATION_GAMES = [
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1711/2770dc7f7f267d5da7fe5b2704bf7586d9c2c461dadfd386.png?w=600&thumb=false"
   }
 ];
+
+/* Planowane zakupy fizyczne PS5. Edytowane w repozytorium, nie w przegladarce. */
+window.PLAYSTATION_WISHLIST = [
+  {
+    "name": "Until Dawn 2",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2808/6779640b51ca4b98c8185f677cb10e13792de40fe06614fa.png?w=600&thumb=false",
+    "releaseDate": "2027-01-28"
+  },
+  {
+    "name": "God of War Laufey",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1800/e1e187126032636435888915f17e26c3645661746a38362d.png?w=600&thumb=false",
+    "releaseDate": "2027-05-20"
+  }
+];
