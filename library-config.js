@@ -43,26 +43,6 @@ window.STEAM_RELEASE_DATES = {
 window.STEAM_COVERS = window.STEAM_COVERS || {};
 window.STEAM_COVERS[393080] = "https://cdn2.steamgriddb.com/grid/a3116fcb0ff78581d441a3de68287e73.png";
 
-// Gestosc kafelkow: na desktopie ok. 2x wiecej gier w jednym rzedzie.
-(() => {
-  const style = document.createElement("style");
-  style.textContent = `
-    @media (min-width: 1051px) {
-      .grid {
-        grid-template-columns: repeat(auto-fill, minmax(67px, 1fr));
-        gap: 18px 9px;
-      }
-    }
-    @media (min-width: 681px) and (max-width: 1050px) {
-      .grid {
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-        gap: 16px 6px;
-      }
-    }
-  `;
-  document.head.appendChild(style);
-})();
-
 // Profil Steam uzywany w prawym gornym rogu.
 (() => {
   const profileUrl = "https://steamcommunity.com/id/shinhati4/";
