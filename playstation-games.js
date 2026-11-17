@@ -145,6 +145,10 @@ window.PLAYSTATION_GAMES = [
 /* Planowane zakupy fizyczne PS5. Edytowane w repozytorium, nie w przegladarce. */
 window.PLAYSTATION_WISHLIST = [
   {
+    "name": "007 First Light",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202507/0215/6f46c5453eed7810945ab46d64a15cb634cca0e867c4c0ff.png?w=600&thumb=false"
+  },
+  {
     "name": "Clair Obscur: Expedition 33",
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2217/e5833a53529ff9879e87689f1e8b04d45ba7e6c97fa791e2.png?w=600&thumb=false"
   },
@@ -176,6 +180,11 @@ window.PLAYSTATION_WISHLIST = [
   {
     "name": "The Last of Us Part II Remastered",
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png?w=600&thumb=false"
+  },
+  {
+    "name": "Tomb Raider: Legacy of Atlantis",
+    "cover": "https://media.gamatomic.com/games/TombRaiderLegacyofAtlantis/sticker.jpg",
+    "releaseDate": "2027-02-12"
   },
   {
     "name": "UNCHARTED: Kolekcja Dziedzictwo Złodziei",
