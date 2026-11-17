@@ -182,11 +182,6 @@ window.PLAYSTATION_WISHLIST = [
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png?w=600&thumb=false"
   },
   {
-    "name": "Tomb Raider: Legacy of Atlantis",
-    "cover": "https://media.gamatomic.com/games/TombRaiderLegacyofAtlantis/sticker.jpg",
-    "releaseDate": "2027-02-12"
-  },
-  {
     "name": "UNCHARTED: Kolekcja Dziedzictwo Złodziei",
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/FDEoSfzsxSpuAHyeBTjWBRdC.png?w=600&thumb=false"
   },
