@@ -126,6 +126,7 @@ window.PLAYSTATION_GAMES = [
   },
   {
     "name": "The Last of Us Part I",
+    "physical": true,
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png?w=600&thumb=false"
   },
   {
@@ -172,10 +173,6 @@ window.PLAYSTATION_WISHLIST = [
   {
     "name": "Grand Theft Auto V",
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png?w=600&thumb=false"
-  },
-  {
-    "name": "The Last of Us Part I",
-    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png?w=600&thumb=false"
   },
   {
     "name": "The Last of Us Part II Remastered",
